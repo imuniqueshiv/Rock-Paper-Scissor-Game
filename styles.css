@@ -1,0 +1,129 @@
+/* General Page Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Main Container */
+.container {
+    background: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+}
+
+/* Title */
+#game-title {
+    font-size: 4rem;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* Scoreboard Layout */
+.scoreboard {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.player, .computer {
+    flex: 1;
+    min-width: 280px;
+}
+
+.player img, .computer img {
+    width: 220px;
+    height: auto;
+    margin: 20px 0;
+}
+
+#you-score, #computer-score {
+    font-size: 2.8rem;
+    color: #34495e;
+    font-weight: bold;
+}
+
+/* VS Box */
+.vs-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 25px;
+}
+
+.vs-box h2 {
+    font-size: 2.5rem;
+    margin-top: 15px;
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+/* Restart Button */
+.restart-btn {
+    background: #ff6b6b;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.restart-btn:hover {
+    background: #e84141;
+    transform: scale(1.05);
+}
+
+/* Result Section */
+.result {
+    font-size: 2.2rem;
+    margin: 25px 0;
+    color: #27ae60;
+    font-weight: bold;
+}
+
+/* Choices */
+.choices {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 30px 0;
+}
+
+.choice-btn {
+    background: #3498db;
+    border: none;
+    padding: 16px 32px;
+    border-radius: 12px;
+    font-size: 1.4rem;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.25s, background 0.3s;
+}
+
+.choice-btn:hover {
+    background: #2980b9;
+    transform: scale(1.12);
+}
+
+.mirror-horizontal { transform: scaleX(-1); }
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    font-size: 1rem;
+    color: #7f8c8d;
+}
